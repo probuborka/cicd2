@@ -1,26 +1,10 @@
 package main
 
-import (
-	"fmt"
-	"sync"
-)
-
 func main() {
-	var wg sync.WaitGroup
-	wg.Add(50)
 
-	for i := 0; i < 50; i++ {
-		go func() {
-			fmt.Println(i)
-			wg.Done()
-		}()
-	}
-
-	wg.Wait()
 }
 
 func MaxInt(a, b int) int {
-
 	if a >= b {
 		return a
 	}
