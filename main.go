@@ -15,6 +15,7 @@ func main() {
 		go func() {
 
 			fmt.Println(i)
+
 			wg.Done()
 		}()
 	}
