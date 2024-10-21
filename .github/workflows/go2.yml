@@ -2,7 +2,7 @@ name: Go2
 
 on:
   push:
-    branches: ["new_workflow"]
+   branches: ["main"]
 
 jobs:
 
