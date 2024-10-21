@@ -13,6 +13,7 @@ func main() {
 
 	for i := 0; i < 50; i++ {
 		go func() {
+
 			fmt.Println(i)
 			wg.Done()
 		}()
