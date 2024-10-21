@@ -8,6 +8,7 @@ import (
 func main() {
 
 	var wg sync.WaitGroup
+
 	wg.Add(50)
 
 	for i := 0; i < 50; i++ {
